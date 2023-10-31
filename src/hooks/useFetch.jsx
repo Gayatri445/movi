@@ -20,15 +20,6 @@ const useFetch = (url) => {
       }
     };
     fetchData();
-    // fetchDataFromApi(url)
-    //     .then((res) => {
-    //         setLoading(false);
-    //         setData(res);
-    //     })
-    //     .catch((err) => {
-    //         setLoading(false);
-    //         setError("Something went wrong!");
-    //     });
   }, [url]);
 
   return { data, loading, error };

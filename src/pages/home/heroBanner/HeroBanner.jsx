@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HeroBanner.scss";
 import { useNavigate } from "react-router-dom";
-import useFetch from "../../../hooks/usefetch";
+import useFetch from "../../../hooks/useFetch";
 import { useSelector } from "react-redux";
 import Img from "../../../components/lazyLoadImage/Img";
 import ContentWrapper from "../../../components/ContentWrapper/ContentWrapper";

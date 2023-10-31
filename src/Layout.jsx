@@ -11,7 +11,6 @@ import Header from "./components/Header/Header";
 const Layout = () => {
   const dispatch = useDispatch();
   const { url } = useSelector((state) => state.home);
-  // console.log(url);
 
   useEffect(() => {
     fetchApiConfig();
@@ -44,7 +43,6 @@ const Layout = () => {
     data.map(({genres})=>{
       return genres.map((item)=>(allGenres[item.id]=item))
     })
-    // console.log(allGenres);
     dispatch(getGenres(allGenres));
   }
   return (
